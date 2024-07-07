@@ -1,0 +1,16 @@
+# 9. Run Your Flask Application
+# Run your Flask application to start the web server.
+
+# Run in terminal 
+
+
+python app.py
+
+
+# Open your web browser and go to http://localhost:5000 to see your custom RAG web application. Upload a PDF file and see the extracted text, ask a question (if OpenAI integration is implemented), and get the answer displayed.
+
+# Summary
+# This step-by-step guide provides everything you need to create a Flask web application for uploading PDF files,
+ extracting text from them using PyMuPDF, uploading the extracted text to Azure Cognitive Search, 
+ and optionally using OpenAI to generate answers based on user questions. 
+ Adjust the configurations, paths, and functionality as per your specific requirements and Azure/OpenAI 

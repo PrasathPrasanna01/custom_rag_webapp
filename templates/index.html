@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom RAG Web App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Custom RAG Web App</h1>
+        <form method="POST" enctype="multipart/form-data">
+            <input type="file" name="file" accept=".pdf">
+            <button type="submit">Upload PDF</button>
+        </form>
+        {% if filename %}
+        <h2>Uploaded File: {{ filename }}</h2>
+        <h3>Extracted Text:</h3>
+        <pre>{{ text }}</pre>
+        <h3>Question:</h3>
+        <p>{{ question }}</p>
+        <h3>Answer:</h3>
+        <p>{{ answer }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>
