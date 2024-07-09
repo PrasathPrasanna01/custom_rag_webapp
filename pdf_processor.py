@@ -1,4 +1,5 @@
 # pdf_processor.py
+
 import fitz  # PyMuPDF for PDF processing
 
 def extract_text_from_pdf(pdf_path):
